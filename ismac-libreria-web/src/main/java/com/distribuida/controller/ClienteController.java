@@ -48,7 +48,7 @@ public class ClienteController {
 		}
 			
 	
-	/////////////////////////////////////////////////POST-SELECT - add
+	//POST-SELECT - add
 	@PostMapping("/add")
 				
 	private String add(@RequestParam("idCliente")@Nullable Integer idCliente
@@ -73,13 +73,13 @@ public class ClienteController {
 	
 	
 	}
-	///////////////////////////////////////////////////PUT - UPDATE - UP
+	//PUT - UPDATE - UP
 	@PutMapping("/up")
 	private String up() {
 		return "redirect:/clientes/findAll";
 	}
 	
-	////////////////////////////////////////////////DELETE - DELETE - DEL
+	//DELETE - DELETE - DEL
 	
 	@GetMapping("/del")
 	private String del(@RequestParam("idCliente")@Nullable Integer idCliente) {
